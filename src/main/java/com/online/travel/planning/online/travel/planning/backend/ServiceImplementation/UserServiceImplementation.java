@@ -114,7 +114,7 @@ public class UserServiceImplementation implements UserService {
 
 
         if (imagePath != null && !imagePath.isEmpty()) {
-            String fullPath = getAccessibleUrl("https://online-travel-planning.up.railway.app/" + imagePath);
+            String fullPath = getAccessibleUrl("online-travel-planning-production.up.railway.app" + imagePath);
             user.setProfileImagePath(fullPath);
         }
 
@@ -128,7 +128,7 @@ public class UserServiceImplementation implements UserService {
         for (User user : users) {
           String imagePath=user.getProfileImagePath();
           if(imagePath!=null && !imagePath.isEmpty()) {
-              String fullPath=getAccessibleUrl("https://online-travel-planning.up.railway.app/" +imagePath);
+              String fullPath=getAccessibleUrl("online-travel-planning-production.up.railway.app" +imagePath);
               user.setProfileImagePath(fullPath);
           }
         }
@@ -271,7 +271,7 @@ public class UserServiceImplementation implements UserService {
         Optional<User> getuser = userRepository.findByUserEmail(email);
         String imagePath = getuser.get().getProfileImagePath();
         if (imagePath != null && !imagePath.isEmpty()) {
-            String fullPath = getAccessibleUrl("https://online-travel-planning.up.railway.app/" + imagePath);
+            String fullPath = getAccessibleUrl("online-travel-planning-production.up.railway.app" + imagePath);
             getuser.get().setProfileImagePath(fullPath);
         }
 
