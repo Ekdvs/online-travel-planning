@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.util.*;
 
 @RestController
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("https://ceylon-travelernetlifyapp.vercel.app/")
 @RequestMapping("/user")
 public class UserController {
 
