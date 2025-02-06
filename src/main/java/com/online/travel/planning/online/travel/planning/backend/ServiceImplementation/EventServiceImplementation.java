@@ -37,7 +37,7 @@ public class EventServiceImplementation implements EventService{
         for (Event event : events) {
             String imagePath = event.getEventImagePath();
             if (imagePath != null && !imagePath.isEmpty()) {
-                String fullPath = getAccessibleUrl("http://localhost:8080" + imagePath);
+                String fullPath = getAccessibleUrl("https://online-travel-planning-production.up.railway.app" + imagePath);
                 event.setEventImagePath(fullPath);
             }
            
@@ -59,7 +59,7 @@ public class EventServiceImplementation implements EventService{
             String imagePath = event.getEventImagePath();
 
             if (imagePath != null && !imagePath.isEmpty()) {
-                String fullPath = getAccessibleUrl("http://localhost:8080" + imagePath);
+                String fullPath = getAccessibleUrl("https://online-travel-planning-production.up.railway.app" + imagePath);
                 event.setEventImagePath(fullPath);
             }
         }

@@ -90,7 +90,7 @@ public class TravelPlaceServiceImplementation implements TravelPlaceService{
         for (TravelPlace place : places) {
             String imagePath=place.getPlaceImagePath();
             if (imagePath != null && !imagePath.isEmpty()) {
-                String fullPath = getAccessibleUrl("http://localhost:8080" + imagePath);
+                String fullPath = getAccessibleUrl("https://online-travel-planning-production.up.railway.app" + imagePath);
                 place.setPlaceImagePath(fullPath);
             }
         }

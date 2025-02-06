@@ -32,6 +32,7 @@ public class PaymentServiceImplementation implements PaymentService {
         Payment payment = paymentRepository.findById(paymentId).orElse(null);
         if (payment != null) {
             payment.setStatus(status);
+            sendPaymentSuccessEmail(payment);
             return paymentRepository.save(payment);
         }
         return null;

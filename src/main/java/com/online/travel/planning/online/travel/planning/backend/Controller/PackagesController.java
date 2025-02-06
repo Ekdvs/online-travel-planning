@@ -17,7 +17,7 @@ import com.online.travel.planning.online.travel.planning.backend.Service.Package
 import org.springframework.web.multipart.MultipartFile;
 
 @RestController
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("https://ceylon-travelernetlifyapp.vercel.app/")
 @RequestMapping("/packages")
 public class PackagesController {
 

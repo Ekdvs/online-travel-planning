@@ -16,7 +16,7 @@ import com.online.travel.planning.online.travel.planning.backend.Service.TravelP
 import org.springframework.web.multipart.MultipartFile;
 
 @RestController
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("https://ceylon-travelernetlifyapp.vercel.app/")
 @RequestMapping("/place")
 public class TravelPlaceController {
     @Autowired

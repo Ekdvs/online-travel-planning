@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("https://ceylon-travelernetlifyapp.vercel.app/")
 @RequestMapping("/blog")
 public class BlogController {
     @Autowired

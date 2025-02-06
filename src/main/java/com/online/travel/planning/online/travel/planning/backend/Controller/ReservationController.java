@@ -20,7 +20,7 @@ import com.online.travel.planning.online.travel.planning.backend.Service.Reserva
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 
 @RestController
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("https://ceylon-travelernetlifyapp.vercel.app/")
 @RequestMapping("/reservation")
 public class ReservationController {
 

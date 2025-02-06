@@ -21,7 +21,7 @@ import com.online.travel.planning.online.travel.planning.backend.Service.EventSe
 
 
 @RestController
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("https://ceylon-travelernetlifyapp.vercel.app/")
 @RequestMapping("/event")
 public class EventController {
 

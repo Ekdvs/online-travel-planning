@@ -37,7 +37,7 @@ public class PackagesServiceImplementation implements PackagesService {
         for (Packages packages : packagesList) {
             String imagePath=packages.getPackageImagePath();
             if(imagePath!=null&&!imagePath.isEmpty()){
-                String fullpath=getAccessibleUrl("http://localhost:8080" + imagePath);
+                String fullpath=getAccessibleUrl("https://online-travel-planning-production.up.railway.app" + imagePath);
                 packages.setPackageImagePath(fullpath);
             }
         }
@@ -77,7 +77,7 @@ public class PackagesServiceImplementation implements PackagesService {
         for (Packages packages : packagesList) {
             String imagePath=packages.getPackageImagePath();
             if(imagePath!=null&&!imagePath.isEmpty()){
-                String fullpath=getAccessibleUrl("http://localhost:8080" + imagePath);
+                String fullpath=getAccessibleUrl("https://online-travel-planning-production.up.railway.app" + imagePath);
                 packages.setPackageImagePath(fullpath);
             }
 

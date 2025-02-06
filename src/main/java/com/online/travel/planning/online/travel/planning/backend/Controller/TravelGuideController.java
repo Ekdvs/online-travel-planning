@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/travel-guides")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://ceylon-travelernetlifyapp.vercel.app/")
 public class TravelGuideController {
 
     @Autowired
