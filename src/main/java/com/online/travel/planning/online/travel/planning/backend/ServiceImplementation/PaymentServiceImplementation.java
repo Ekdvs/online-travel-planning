@@ -19,6 +19,7 @@ public class PaymentServiceImplementation implements PaymentService {
 
     @Override
     public Payment createPayment(Payment payment) {
+        sendPaymentSuccessEmail(payment);
         return paymentRepository.save(payment);
     }
 
