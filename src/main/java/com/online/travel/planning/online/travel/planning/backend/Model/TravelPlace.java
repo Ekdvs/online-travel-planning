@@ -5,6 +5,10 @@ import java.time.LocalTime;
 
 
 
+
+
+
+
 public class TravelPlace {
     @Id
     private String placeId;
